@@ -2,7 +2,7 @@
 package com.mycompany.cost2;
 public final class UniversityPolicy {
 
-    public static final String UNIVERSITY_NAME = "Kelaniya University";
+    public static final String UNIVERSITY_NAME = "University Of Kelaniya";
     public static final double BONUS_RATE = 0.1;
 
     public static void showPolicyHeader() {

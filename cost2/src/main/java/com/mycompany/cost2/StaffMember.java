@@ -35,6 +35,16 @@ public abstract class StaffMember {
     return staffCount;
     }
     
+    public void changeDepartment(String newDepartment) {
+    if (!newDepartment.isEmpty()) {
+        this.department = newDepartment;
+    }
+}   
+    
+    public final void showCommonNotice() {
+    System.out.println("NOTICE : All staff must follow university rules.");
+    }
+    
     public final void displayBasicDetails() {
         System.out.println("Full Name: " + fullName);
         System.out.println("Staff ID: " + staffId);
@@ -43,5 +53,5 @@ public abstract class StaffMember {
 
     public abstract double calculateMonthlyPayment();
 
-    // staffCount is static because it is shared among all objects.
+    // changeDepartment() allows controlled updates instead of direct access.
 }
