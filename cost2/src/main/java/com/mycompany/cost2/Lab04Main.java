@@ -9,9 +9,10 @@ public class Lab04Main {
     public static void main(String[] args) {
 
         Lecturer lec = new Lecturer("Nimal Perera", "L001", "IT", 3, 50000);
+        LabAssistant lab = new LabAssistant("K. Rathnayake", "A001", "IT", 40, 2000);
 
-        lec.displayLecturerDetails();
-        System.out.println("Monthly Payment: " + lec.calculateMonthlyPayment());
-    }
+    lec.displayLecturerDetails();
+    lab.displayLabAssistantDetails();
+}
 }
 

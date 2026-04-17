@@ -25,5 +25,6 @@ public class Lecturer extends StaffMember {
         displayBasicDetails();
         System.out.println("Courses: " + courseCount);
         System.out.println("Payment per Course: " + paymentPerCourse);
+        System.out.println();
     }
 }
