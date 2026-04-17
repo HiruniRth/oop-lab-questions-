@@ -26,6 +26,6 @@ public class LabAssistant extends StaffMember {
         System.out.println("Hours Worked: " + hoursWorked);
         System.out.println("Hourly Rate: " + hourlyRate);
     }
-
+    
     // department is protected so child classes can access it directly
 }
