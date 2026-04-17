@@ -4,19 +4,14 @@ package com.mycompany.cost2;
 public class Lab04Main {
 
     public static void main(String[] args) {
+        
+        StaffMember.showSystemName();
 
-        Lecturer lec = new Lecturer("Nimal", "L001", "IT", 3, 50000);
-        LabAssistant lab = new LabAssistant("Kamal", "A001", "IT", 40, 2000);
+        Lecturer lec1 = new Lecturer("Nimal Perera", "L001", "IT", 3, 50000);
+        Lecturer lec2 = new Lecturer("H.S.Silva", "L002", "Electronics", 5, 60000);
+        LabAssistant lab = new LabAssistant("K.Rathnayake", "A001", "IT", 40, 2000);
 
-        UniversityPolicy.showPolicyHeader();
-        System.out.println("University: " + UniversityPolicy.UNIVERSITY_NAME);
-
-        System.out.println();
-        double lecturerBonus = lec.calculateMonthlyPayment();
-        double assistantBonus = lab.calculateMonthlyPayment();
-
-        System.out.println("Lecturer Bonus: " + UniversityPolicy.calculateBonus(lecturerBonus));
-        System.out.println("Lab Assistant Bonus: " + UniversityPolicy.calculateBonus(assistantBonus));
+        System.out.println("Total Staff Count: " + StaffMember.getStaffCount());
     }
 }
 

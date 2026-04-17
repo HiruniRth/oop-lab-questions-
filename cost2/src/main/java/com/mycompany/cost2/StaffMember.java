@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.cost2;
 
 public abstract class StaffMember {
@@ -9,11 +6,13 @@ public abstract class StaffMember {
     private String fullName;
     private final String staffId;
     protected String department;
+    private static int staffCount = 0;
 
     public StaffMember(String fullName, String staffId, String department) {
         this.fullName = fullName;
         this.staffId = staffId;
         this.department = department;
+        staffCount++;
     }
 
     public String getFullName() {
@@ -28,6 +27,14 @@ public abstract class StaffMember {
         return department;
     }
 
+    public static void showSystemName() {
+    System.out.println("University Staff Payment System");
+    }
+    
+    public static int getStaffCount() {
+    return staffCount;
+    }
+    
     public final void displayBasicDetails() {
         System.out.println("Full Name: " + fullName);
         System.out.println("Staff ID: " + staffId);
@@ -36,6 +43,5 @@ public abstract class StaffMember {
 
     public abstract double calculateMonthlyPayment();
 
-    // StaffMember is abstract because it acts as a general template for all staff types
-    // and should not be used to create objects directly.
+    // staffCount is static because it is shared among all objects.
 }
