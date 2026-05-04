@@ -16,7 +16,7 @@ public class DeliveryChargeCalculator {
 
     public double calculateCharge(double baseCharge, boolean expressDelivery) {
         if (expressDelivery) {
-            return baseCharge + 200.0;
+            return baseCharge + 500.0;
         }
         return baseCharge;
     }
